@@ -35,7 +35,7 @@ body {
 }
 
 #display-container {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     color: white;
     display: flex;
     flex-direction: column;
@@ -70,33 +70,52 @@ button {
     box-shadow:  4px 4px 8px #bebebe,
                 -4px -4px 8px #ffffff;
     border: none;
+    font-size: 20px;
+}
+
+.numerical-button-clicked {
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe,
+                inset -20px -20px 60px #ffffff;
 }
 
 .operator-button {
     background: #ff9c39 linear-gradient(145deg, #e68c33, #ffa73d);
 }
 
-.top-button {
+.operator-button-clicked {
+    background: #ff9c39;
+    box-shadow: inset 20px 20px 60px #d98530,
+                inset -20px -20px 60px #ffb342;
+}
+
+.mod-button {
     background: #656565 linear-gradient(145deg, #5b5b5b, #6c6c6c);
     color: #dfdfdf;
 }
 
-#clear-button {
+.mod-button-clicked {
+    background: #656565;
+    box-shadow: inset 20px 20px 60px #565656,
+                inset -20px -20px 60px #747474;
+}
+
+#clear {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-#inverse-sign-button {
+#inverse {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
 }
 
-#backspace-button {
+#backspace {
     grid-column: 6 / 7;
     grid-row: 2 / 3;
 }
 
-#divide-button {
+#divide {
     grid-column: 8 / 9;
     grid-row: 2 / 3;
 }
@@ -116,7 +135,7 @@ button {
     grid-row: 4 / 5;
 }
 
-#multiply-button {
+#multiply {
     grid-column: 8 / 9;
     grid-row: 4 / 5;
 }
@@ -136,7 +155,7 @@ button {
     grid-row: 6 / 7;
 }
 
-#subtract-button {
+#subtract {
     grid-column: 8 / 9;
     grid-row: 6 / 7;
 }
@@ -156,7 +175,7 @@ button {
     grid-row: 8 / 9;
 }
 
-#plus-button {
+#add {
     grid-column: 8 / 9;
     grid-row: 8 / 9;
 }
@@ -171,7 +190,7 @@ button {
     grid-row: 10 / 11;
 }
 
-#equal-button {
+#equal {
     grid-column: 6 / 9;
     grid-row: 10 / 11;
 }
